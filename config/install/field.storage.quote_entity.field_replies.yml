@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - quote_module
+id: quote_entity.field_replies
+field_name: field_replies
+entity_type: quote_entity
+type: comment
+settings:
+  comment_type: quote_comments
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,82 @@
+entity.quote_entity.add_dynamic:
+  path: '/painter/{node}/quote_entity/add'
+  defaults:
+    _entity_form: quote_entity.add
+  options:
+    parameters:
+      node:
+        type: entity:node
+  requirements:
+    _access: 'TRUE'
+
+entity.commission_entity.add_form:
+  path: '/commission_entity/add'
+  defaults:
+    _entity_form: commission_entity.add
+    source: 1
+  options:
+    parameters:
+      quote_entity:
+        type: entity:quote_entity
+  requirements:
+    _access: 'TRUE'
+
+entity.commission_entity.create_form:
+  path: '/quote/{quote_entity}/commission_entity/create'
+  defaults:
+    _entity_form: commission_entity.add
+    source: 2
+  options:
+    parameters:
+      quote_entity:
+        type: entity:quote_entity
+  requirements:
+    _access: 'TRUE'
+
+entity.commission_entity.edit_form:
+  path: '/commission/{commission_entity}/edit'
+  defaults:
+    _entity_form: commission_entity.edit
+    source: 1
+  options:
+    parameters:
+      commission_entity:
+        type: entity:commission_entity
+  requirements:
+    _access: 'TRUE'
+
+entity.commission_entity.customer_sign:
+  path: '/commission/{commission_entity}/customer_sign'
+  defaults:
+    _entity_form: commission_entity.edit
+    source: 2
+  options:
+    parameters:
+      commission_entity:
+        type: entity:commission_entity
+  requirements:
+    _access: 'TRUE'
+
+entity.commission_entity.painter_sign:
+  path: '/commission/{commission_entity}/painter_sign'
+  defaults:
+    _entity_form: commission_entity.edit
+    source: 3
+  options:
+    parameters:
+      commission_entity:
+        type: entity:commission_entity
+  requirements:
+    _access: 'TRUE'
+
+entity.commission_entity.painter_edit_form:
+  path: '/commission/{commission_entity}/painter_edit'
+  defaults:
+    _entity_form: commission_entity.edit
+    source: 4
+  options:
+    parameters:
+      commission_entity:
+        type: entity:commission_entity
+  requirements:
+    _access: 'TRUE'

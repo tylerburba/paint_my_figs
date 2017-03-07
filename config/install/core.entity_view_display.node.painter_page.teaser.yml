@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.painter_page.field_biography
+    - field.field.node.painter_page.field_description_of_services
+    - node.type.painter_page
+  module:
+    - user
+    - quote_module
+  enforced:
+    module:
+      - quote_module
+id: node.painter_page.teaser
+targetEntityType: node
+bundle: painter_page
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_biography: true
+  field_description_of_services: true

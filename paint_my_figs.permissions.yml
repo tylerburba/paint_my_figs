@@ -1,0 +1,40 @@
+add quote entity entities:
+  title: 'Create new Quote entity entities'
+
+administer quote entity entities:
+  title: 'Administer Quote entity entities'
+  description: 'Allow to access the administration form to configure Quote entity entities.'
+  restrict access: true
+
+delete quote entity entities:
+  title: 'Delete Quote entity entities'
+
+edit quote entity entities:
+  title: 'Edit Quote entity entities'
+
+view published quote entity entities:
+  title: 'View published Quote entity entities'
+
+view unpublished quote entity entities:
+  title: 'View unpublished Quote entity entities'
+
+
+add commission entity entities:
+  title: 'Create new commission entity entities'
+
+administer commission entity entities:
+  title: 'Administer commission entity entities'
+  description: 'Allow to access the administration form to configure commission entity entities.'
+  restrict access: true
+
+delete commission entity entities:
+  title: 'Delete commission entity entities'
+
+edit commission entity entities:
+  title: 'Edit commission entity entities'
+
+view published commission entity entities:
+  title: 'View published commission entity entities'
+
+view unpublished commission entity entities:
+  title: 'View unpublished commission entity entities'

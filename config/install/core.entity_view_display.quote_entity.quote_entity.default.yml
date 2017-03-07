@@ -1,0 +1,52 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.quote_comments.default
+    - field.field.quote_entity.quote_entity.field_job_description
+    - field.field.quote_entity.quote_entity.field_replies
+  module:
+    - comment
+    - quote_module
+    - text
+    - user
+id: quote_entity.quote_entity.default
+targetEntityType: quote_entity
+bundle: quote_entity
+mode: default
+content:
+  field_job_description:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_replies:
+    weight: 4
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
+  name:
+    label: hidden
+    type: string
+    weight: 0
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  painter:
+    label: inline
+    type: author
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  user_id:
+    label: inline
+    type: author
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  test: true

@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - quote_module
+id: commission_entity.field_estimated_work_duration
+field_name: field_estimated_work_duration
+entity_type: commission_entity
+type: decimal
+settings:
+  precision: 10
+  scale: 1
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

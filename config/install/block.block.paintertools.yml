@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.painter-tools
+  module:
+    - node
+    - system
+  theme:
+    - bartik
+id: paintertools
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:painter-tools'
+settings:
+  id: 'system_menu_block:painter-tools'
+  label: 'Painter Tools'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      painter_page: painter_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

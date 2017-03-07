@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.quote_entity.field_job_description
+  module:
+    - quote_module
+    - text
+id: quote_entity.quote_entity.field_job_description
+field_name: field_job_description
+entity_type: quote_entity
+bundle: quote_entity
+label: 'Job Description'
+description: 'Describe the job you want done. Include the quantity and type of figures, desired color scheme, etc.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

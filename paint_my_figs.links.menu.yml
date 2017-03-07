@@ -1,0 +1,40 @@
+# Quote entity menu items definition
+entity.quote_entity.collection:
+  title: 'Quote entity list'
+  route_name: entity.quote_entity.collection
+  description: 'List Quote entity entities'
+  parent: system.admin_structure
+  weight: 100
+
+quote_entity.admin.structure.settings:
+  title: Quote entity settings
+  description: 'Configure Quote entity entities'
+  route_name: quote_entity.settings
+  parent: system.admin_structure
+
+entity.commission_entity.collection:
+  title: 'commission entity list'
+  route_name: entity.commission_entity.collection
+  description: 'List commission entity entities'
+  parent: system.admin_structure
+  weight: 100
+
+commission_entity.admin.structure.settings:
+  title: commission entity settings
+  description: 'Configure commission entity entities'
+  route_name: commission_entity.settings
+  parent: system.admin_structure
+
+#entity.quote_entity.add_form:
+#  route_name: entity.quote_entity.add_form
+#  title: 'Request a Quote'
+#  parent: tools
+
+#entity.quote_entity.add_dynamic:
+#  deriver: 'Drupal\quote_module\Plugin\Derivative\QuoteModuleMenuLinkDerivative'
+
+#entity.quote_entity.add_dynamic_link:
+#  route_name: entity.quote_entity.add_dynamic
+#  title: 'Request a Dynamic Quote'
+#  parent: tools
+    

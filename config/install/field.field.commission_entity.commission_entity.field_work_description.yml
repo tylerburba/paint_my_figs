@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.commission_entity.field_work_description
+  module:
+    - quote_module
+    - text
+id: commission_entity.commission_entity.field_work_description
+field_name: field_work_description
+entity_type: commission_entity
+bundle: commission_entity
+label: 'Work Description'
+description: 'A description of the work to be done by the painter.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

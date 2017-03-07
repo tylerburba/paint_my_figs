@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.commission_entity.field_estimated_work_duration
+  module:
+    - quote_module
+id: commission_entity.commission_entity.field_estimated_work_duration
+field_name: field_estimated_work_duration
+entity_type: commission_entity
+bundle: commission_entity
+label: 'Estimated Work Duration'
+description: 'The amount of time (in days) the painter estimates it will take to complete the work after they have received all supplies.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 365
+  prefix: ''
+  suffix: ''' day| days'''
+field_type: decimal

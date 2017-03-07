@@ -1,0 +1,84 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.commission_entity.commission_entity.field_customer_signature
+    - field.field.commission_entity.commission_entity.field_customer_signature_date
+    - field.field.commission_entity.commission_entity.field_estimated_work_duration
+    - field.field.commission_entity.commission_entity.field_painter_signature
+    - field.field.commission_entity.commission_entity.field_painter_signature_date
+    - field.field.commission_entity.commission_entity.field_price
+    - field.field.commission_entity.commission_entity.field_quote
+    - field.field.commission_entity.commission_entity.field_work_description
+  module:
+    - datetime
+    - quote_module
+    - text
+id: commission_entity.commission_entity.default
+targetEntityType: commission_entity
+bundle: commission_entity
+mode: default
+content:
+  field_customer_signature:
+    weight: 5
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+  field_customer_signature_date:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+  field_estimated_work_duration:
+    weight: 3
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+  field_painter_signature:
+    weight: 7
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+  field_painter_signature_date:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+  field_price:
+    weight: 2
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+  field_quote:
+    type: entity_reference_autocomplete
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_work_description:
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+  langcode:
+    type: language_select
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

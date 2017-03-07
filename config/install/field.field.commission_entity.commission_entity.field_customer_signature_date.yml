@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.commission_entity.field_customer_signature
+  module:
+    - quote_module
+id: commission_entity.commission_entity.field_customer_signature
+field_name: field_customer_signature
+entity_type: commission_entity
+bundle: commission_entity
+label: 'Customer Signature'
+description: 'Select if you have reviewed the commission and agree.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Signed
+  off_label: 'Signature Required'
+field_type: boolean

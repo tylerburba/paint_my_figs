@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.commission_entity.field_painter_signature
+  module:
+    - quote_module
+id: commission_entity.commission_entity.field_painter_signature
+field_name: field_painter_signature
+entity_type: commission_entity
+bundle: commission_entity
+label: 'Painter Signature'
+description: 'Click here if you agree to the terms of the commission.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Signed
+  off_label: 'Painter Signature'
+field_type: boolean

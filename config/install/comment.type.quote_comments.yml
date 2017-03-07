@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: quote_comments
+label: 'Quote Comments'
+target_entity_type_id: quote_entity
+description: 'Comments for quotes.'

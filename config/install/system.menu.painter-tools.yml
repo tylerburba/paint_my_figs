@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - quote_module
+  enforced:
+    module:
+      - quote_module
+id: painter-tools
+label: 'Painter Tools'
+description: ''
+locked: false

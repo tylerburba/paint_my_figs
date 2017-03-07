@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.quote_entity.quote_entity.field_job_description
+    - field.field.quote_entity.quote_entity.field_replies
+  module:
+    - comment
+    - quote_module
+    - text
+id: quote_entity.quote_entity.default
+targetEntityType: quote_entity
+bundle: quote_entity
+mode: default
+content:
+  field_job_description:
+    weight: 12
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+  field_replies:
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    type: comment_default
+  langcode:
+    type: language_select
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

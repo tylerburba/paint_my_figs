@@ -1,0 +1,41 @@
+# Quote entity routing definition
+quote_entity.settings_tab:
+  route_name: quote_entity.settings
+  title: 'Settings'
+  base_route: quote_entity.settings
+entity.quote_entity.canonical:
+  route_name: entity.quote_entity.canonical
+  base_route: entity.quote_entity.canonical
+  title: 'View'
+
+entity.quote_entity.edit_form:
+  route_name: entity.quote_entity.edit_form
+  base_route: entity.quote_entity.canonical
+  title: Edit
+
+entity.quote_entity.delete_form:
+  route_name:  entity.quote_entity.delete_form
+  base_route:  entity.quote_entity.canonical
+  title: Delete
+  weight: 10
+
+# commission entity routing definition
+commission_entity.settings_tab:
+  route_name: commission_entity.settings
+  title: 'Settings'
+  base_route: commission_entity.settings
+entity.commission_entity.canonical:
+  route_name: entity.commission_entity.canonical
+  base_route: entity.commission_entity.canonical
+  title: 'View'
+
+entity.commission_entity.edit_form:
+  route_name: entity.commission_entity.edit_form
+  base_route: entity.commission_entity.canonical
+  title: Edit
+
+entity.commission_entity.delete_form:
+  route_name:  entity.commission_entity.delete_form
+  base_route:  entity.commission_entity.canonical
+  title: Delete
+  weight: 10

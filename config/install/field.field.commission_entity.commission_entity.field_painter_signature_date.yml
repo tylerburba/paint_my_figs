@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.commission_entity.field_painter_signature_date
+  module:
+    - datetime
+    - quote_module
+id: commission_entity.commission_entity.field_painter_signature_date
+field_name: field_painter_signature_date
+entity_type: commission_entity
+bundle: commission_entity
+label: 'Painter Signature Date'
+description: 'Time the painter signed the commission'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

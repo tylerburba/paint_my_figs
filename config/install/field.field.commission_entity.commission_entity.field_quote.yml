@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.commission_entity.field_quote
+  module:
+    - quote_module
+id: commission_entity.commission_entity.field_quote
+field_name: field_quote
+entity_type: commission_entity
+bundle: commission_entity
+label: Quote
+description: 'The quote this commission is from.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:quote_entity'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

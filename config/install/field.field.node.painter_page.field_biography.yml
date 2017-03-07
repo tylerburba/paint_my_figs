@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_biography
+    - node.type.painter_page
+  module:
+    - text
+    - quote_module
+  enforced:
+    module:
+      - quote_module
+id: node.painter_page.field_biography
+field_name: field_biography
+entity_type: node
+bundle: painter_page
+label: Biography
+description: 'Tell us a bit about yourself.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

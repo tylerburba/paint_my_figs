@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.painter_page.field_biography
+    - field.field.node.painter_page.field_description_of_services
+    - node.type.painter_page
+  module:
+    - text
+    - user
+id: node.painter_page.default
+targetEntityType: node
+bundle: painter_page
+mode: default
+content:
+  field_biography:
+    type: text_default
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_description_of_services:
+    type: text_default
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

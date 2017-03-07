@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description_of_services
+    - node.type.painter_page
+  module:
+    - text
+    - quote_module
+  enforced:
+    module:
+      - quote_module
+id: node.painter_page.description_of_services
+field_name: field_description_of_services
+entity_type: node
+bundle: painter_page
+label: Description of Services
+description: 'List prices, etc.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary
