@@ -38,7 +38,7 @@ class CommissionToolsBlock extends BlockBase{
         }
           //if the customer hasn't signed
         elseif ($commission->get('field_customer_signature') == true) {
-            $EditCommissionLink = Link::createFromRoute($this->t('Edit'), 'entity.commission_entity.painter_edit_form',
+            $EditCommissionLink = Link::createFromRoute($this->t('Edit this Commission'), 'entity.commission_entity.painter_edit_form',
                 array('commission_entity' => $commission->id())
             )->toString();
             $build['commission_id'] = array(
